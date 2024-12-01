@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 front-page d-flex flex-column justify-content-center">
+                    <h1 class="infra-heading text-center">Smart Infrastructure Hub</h1>
+                    <button class="enterButton" onclick="display('section2')">ENTER</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-secondary nav fixed-top">
+                        <a class="navbar-brand text-white" href="#">
+                            Smart Infrastructure Hub</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto text-white">
+                                <a class="nav-link active text-white" href="#" onclick="display('section1')">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-white" href="#">Features</a>
+                                <a class="nav-link text-white" href="#">Pricing</a>
+                                <a class="nav-link text-white" href="#">Downloads</a>
+                                <a class="nav-link text-white" href="#">Help Center</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="mt-5">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://img.freepik.com/free-photo/3d-rendering-industry-40-concept_23-2149408313.jpg?ga=GA1.1.1613252611.1732197654&semt=ais_hybrid" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://img.freepik.com/free-photo/person-using-ar-technology-their-daily-occupation_23-2151137351.jpg?ga=GA1.1.1613252611.1732197654&semt=ais_hybrid" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://img.freepik.com/free-vector/business-design-vector_23-2147488751.jpg?t=st=1732896027~exp=1732899627~hmac=3bba1e3d49089c824c6b241868fda33a543d384418ca92a2fb2194029cab23de&w=996" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <img src="data:image/jpeg;base64,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">
+                        <h1 class="topics">smart-monitoring</h1>
+                        <p class="text-center">Real-time infrastructure monitoring with IoT sensors.</p>
+                        <button class="KnowMore text-center" onclick="display('sectionmatter1')">know more</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 ">
+                    <div class="card shadow">
+                        <img src="https://www.veracitiz.com/images/services/Resource-Optimization-Services-Unleashing-Productivity-with-Intelligent-Resource-Management.jpeg">
+                        <h1 class="topics">Resouce Optimization</h1>
+                        <p class="text-center">AI-powered tools to optimize resource utilization.</p>
+                        <button class="KnowMore" onclick="display('sectionmatter2')">know more</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq0e0do2ky6lmKgiiVBriqfrSkfLRcL-pkFw&s">
+                        <h1 class="topics">Innovation in Industry and Technology</h1>
+                        <p class="text-center">Fostering innovation across industries involves leveraging cutting-edge technologies</p>
+                        <button class="KnowMore" onclick="display('sectionmatter3')">know more</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <img src="data:image/jpeg;base64,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" class="image">
+                        <h1 class="topics">Innovation Platform</h1>
+                        <p class="text-center p-0">Collaborative spaces for research and technology development</p>
+                        <button class="KnowMore" onclick="display('sectionmatter4')">know more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="sectionmatter1" class="para">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        </div>
+        <p><span>Smart monitoring</span> is integral to Industry, Innovation, and Infrastructure because it enhances operational efficiency, drives technological advancements, and strengthens the resilience and sustainability of infrastructure. By integrating IoT, AI, and data analytics,
+            smart monitoring provides real-time insights that improve decision-making, optimize resource use,
+            and enable predictive capabilities that ultimately contribute to the success of industries and infrastructure projects.
+            Smart monitoring is a transformative approach to enhancing efficiency, sustainability, and resilience in industry, innovation, and infrastructure.
+            By utilizing advanced technologies such as IoT, AI, and real-time data analytics, smart monitoring enables continuous
+            tracking of operations, systems, and assets. In industries, it facilitates predictive maintenance, reduces downtime,
+            and optimizes resource usage, driving productivity and cost savings. For infrastructure, smart monitoring ensures the
+            safety and longevity of assets like bridges, buildings, and utilities by detecting issues early and guiding proactive
+            interventions. It also supports smart city initiatives, optimizing energy, water, and transportation systems to improve urban living.
+            By providing actionable insights, smart monitoring empowers informed decision-making and fosters innovation in process
+            improvements. Its role in resource conservation and sustainability is vital for addressing global challenges like climate change and resource scarcity.
+            As industries and infrastructure increasingly embrace smart monitoring, it will remain a key enabler of smarter, more
+            sustainable, and adaptive systems for the future.
+
+        </p>
+        <button class="backButton" onclick="display('section2')">BACK</button>
+    </div>
+    <div id="sectionmatter2" class="para">
+        <p><span>Resource optimization</span> underpins the goals of Industry, Innovation, and Infrastructure by improving efficiency,
+            reducing costs, and ensuring sustainability. Through the integration of advanced technologies like IoT, AI, and digital
+            twins, industries and infrastructure can achieve smarter, more sustainable, and innovative operations while conserving
+            vital resources for future generations.Resource optimization is a cornerstone for sustainable growth in industry,
+            innovation, and infrastructure. By leveraging technologies such as IoT, AI, and data analytics, industries can
+            streamline operations, minimize waste, and reduce energy consumption, enhancing productivity and cost efficiency.
+            Innovations like digital twins, automation, and circular economy practices further enable smarter use of materials and
+            energy, promoting sustainability. In infrastructure, smart grids, adaptive traffic systems, and green building
+            technologies ensure efficient resource distribution and usage, reducing environmental impact. Resource optimization
+            also fosters resilience, allowing industries and infrastructure to adapt to challenges such as supply chain disruptions or
+            resource shortages. Collaboration platforms and data-driven decision-making amplify these benefits by enabling precise
+            planning and execution. However, achieving global impact requires equitable access to these technologies and a
+            commitment to sustainability. Ultimately, resource optimization is essential for building a future where industries and
+            infrastructure thrive responsibly, balancing economic growth with environmental stewardship.</p>
+        <button class="backButton" onclick="display('section2')">BACK</button>
+    </div>
+    <div id="sectionmatter3" class="para">
+        <p>
+            <span>Innovation in Industry and Technology</span> enabling sustainable development and global progress. By integrating advanced technologies such as IoT, AI,
+            robotics, and blockchain, industries are becoming more efficient, adaptive, and environmentally responsible.
+            These advancements foster smarter manufacturing processes, optimize resource use, and enable predictive
+            maintenance, reducing costs and waste. In infrastructure, innovations like smart cities, digital twins, and
+            renewable energy systems enhance resilience and sustainability, addressing urban challenges like energy demand,
+            traffic congestion, and waste management. Collaboration platforms and open innovation hubs accelerate breakthroughs,
+            bridging gaps between industries and stakeholders. Technology also empowers inclusive growth by creating new opportunities
+            in emerging markets. However, equitable access and responsible deployment of these innovations are essential to ensure benefits reach all communities. As we advance, fostering innovation and leveraging technology will remain critical to achieving resilient industries and sustainable infrastructure, ultimately contributing to a more inclusive and connected world.
+        </p>
+        <button class="backButton" onclick="display('section2')">BACK</button>
+
+    </div>
+    <div id="sectionmatter4" class="para">
+        <p>
+            <span>Innovation platforms</span> play a vital role in transforming industry and infrastructure by fostering collaboration,
+            driving technological advancements, and promoting sustainable solutions. These platforms, such as open innovation hubs
+            and digital ecosystems, connect stakeholders, including businesses, researchers, and governments, to co-create solutions for complex challenges.
+            They enable the development of cutting-edge technologies like IoT, AI, and blockchain, accelerating industrial growth and
+            infrastructure modernization. By facilitating knowledge sharing and resource pooling, innovation platforms empower
+            industries to optimize processes, reduce waste, and enhance resilience. In infrastructure, they support the creation of
+            smart cities, renewable energy systems, and efficient transportation networks, addressing global needs sustainably.
+            These platforms also democratize innovation, providing opportunities for startups and small enterprises to contribute to
+            large-scale advancements. However, equitable access and ethical practices are critical to maximizing their impact. In
+            the pursuit of sustainable development, innovation platforms are essential tools for building inclusive, adaptive, and
+            future-ready industries and infrastructure systems.
+        </p>
+        <button class="backButton" onclick="display('section2')">BACK</button>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js" class="image"></script>
+</body>
+
+</html>
